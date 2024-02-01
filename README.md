@@ -33,20 +33,20 @@ In addition, there are Database.sql and Database summary zerli.txt files with th
 
 ### Using a Java IDE:
 
-1.Create a Folder and Load Projects:
+1. Create a Folder and Load Projects:
 -Create a folder named "midproject".
 -Load the following folders into it: OCSF, ZerliClientApp, and ZerliServerApp.
 -Use a Java IDE of your choice (e.g., Eclipse IDE).
 
 2. Load Database:
-    - Import the Database.sql file into MySQL Workbench.
-    - Update SQL Connection:
-        In ZerliServerApp, navigate to src/server/ServerConnSQL.java and Locate the startConn function (line 50).
-        Modify the SQL connection string within the following line:
-        ```java
-        Javaconn = DriverManager.getConnection("jdbc:mysql://localhost/midproject?useLegacyDatetimeCode=false&serverTimezone=Israel","root",mySQLpassword);
-        ```
-    - Replace the placeholders with your actual MySQL Workbench parameters (link, username, and password).
+- Import the Database.sql file into MySQL Workbench.
+- Update SQL Connection:
+In ZerliServerApp, navigate to src/server/ServerConnSQL.java and Locate the startConn function (line 50).
+Modify the SQL connection string within the following line:
+```java
+Javaconn = DriverManager.getConnection("jdbc:mysql://localhost/midproject?useLegacyDatetimeCode=false&serverTimezone=Israel","root",mySQLpassword);
+```
+- Replace the placeholders with your actual MySQL Workbench parameters (link, username, and password).
 
 3. Run the Server and Client:
 - Run the ClientApp class within the client/ package of ZerliClientApp.
