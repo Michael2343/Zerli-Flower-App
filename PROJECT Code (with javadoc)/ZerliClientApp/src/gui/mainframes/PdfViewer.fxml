@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane prefHeight="920.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ReportViewerController">
+	<padding>
+		<Insets bottom="5" left="5" right="5" top="5" />
+	</padding>
+	<top>
+		<HBox alignment="CENTER" spacing="5.0" BorderPane.alignment="CENTER">
+			<Button disable="true" onAction="#loadFile" prefHeight="25.0" prefWidth="25.0" text="Load File..." visible="false" />
+			<Label fx:id="currentZoomLabel" />
+			<Label text="Zoom:">
+            <HBox.margin>
+               <Insets />
+            </HBox.margin></Label>
+			<Button onAction="#zoomOut" text="-">
+            <HBox.margin>
+               <Insets />
+            </HBox.margin></Button>
+			<Button onAction="#zoomIn" text="+">
+            <HBox.margin>
+               <Insets />
+            </HBox.margin></Button>
+			<Button onAction="#zoomFit" text="Zoom to fit">
+            <HBox.margin>
+               <Insets />
+            </HBox.margin></Button>
+			<Button onAction="#zoomWidth" text="Zoom to width">
+            <HBox.margin>
+               <Insets />
+            </HBox.margin></Button>
+         <Button fx:id="export" onAction="#exportAction" text="Export" />
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+		</HBox>
+	</top>
+   <center>
+      <ScrollPane fx:id="scroller" prefHeight="826.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <content>
+      		<Pagination fx:id="pagination" prefHeight="840.0" prefWidth="600.0" />
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

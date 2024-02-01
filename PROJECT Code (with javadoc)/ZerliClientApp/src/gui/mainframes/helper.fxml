@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="465.0" maxWidth="765.0" minHeight="465.0" minWidth="765.0" prefHeight="465.0" prefWidth="765.0" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HelperController">
+   <children>
+      <ImageView fx:id="helpContent" fitHeight="465.0" fitWidth="765.0" layoutX="-1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="53.0" fitWidth="50.0" layoutX="710.0" layoutY="4.0" onMousePressed="#exitHelperPressed" pickOnBounds="true" preserveRatio="true" styleClass="imageasbtn">
+         <image>
+            <Image url="@../../png/X-btn.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="helpTitle" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="14.0" prefHeight="30.0" prefWidth="638.0" styleClass="subLabel" text="TITLE" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

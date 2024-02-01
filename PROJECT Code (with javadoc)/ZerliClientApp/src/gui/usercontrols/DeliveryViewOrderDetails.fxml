@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="activePanelContainer" prefHeight="663.0" prefWidth="957.0" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DeliveryViewOrderDetailsController">
+   <children>
+      <Button layoutX="9.0" layoutY="596.0" mnemonicParsing="false" onAction="#backPressed" text="Back">
+         <styleClass>
+            <String fx:value="Left-btn" />
+            <String fx:value="pressbtn" />
+         </styleClass>
+      </Button>
+      <Button layoutX="449.0" layoutY="568.0" mnemonicParsing="false" onAction="#donePressed" text="Done">
+         <styleClass>
+            <String fx:value="Reg-btn" />
+            <String fx:value="pressbtn" />
+         </styleClass>
+      </Button>
+      <Label layoutX="306.0" layoutY="14.0" prefHeight="73.0" prefWidth="346.0" styleClass="MainLabel" text="Order details">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="514.0" layoutY="104.0" prefHeight="238.0" prefWidth="369.0">
+         <children>
+            <Label layoutX="18.0" layoutY="95.0" prefHeight="30.0" prefWidth="173.0" styleClass="subLabel" text="Order number:" />
+            <Label layoutX="18.0" layoutY="127.0" prefHeight="30.0" prefWidth="206.0" styleClass="subLabel" text="Payment method:" />
+            <Label fx:id="orderNumberLabel" layoutX="219.0" layoutY="95.0" styleClass="subLabel" text="#" />
+            <Label fx:id="paymentMethodLabel" layoutX="219.0" layoutY="128.0" prefHeight="30.0" prefWidth="150.0" styleClass="subLabel" text="Credit Card" />
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="73.0" prefWidth="307.0" styleClass="MainLabel" text="Order info">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="263.0" layoutY="360.0" prefHeight="93.0" prefWidth="431.0">
+         <children>
+            <Label layoutX="12.0" layoutY="15.0" prefHeight="30.0" prefWidth="173.0" styleClass="subLabel" text="Order date:" />
+            <Label layoutX="12.0" layoutY="45.0" prefHeight="30.0" prefWidth="173.0" styleClass="subLabel" text="Shipping date:" />
+            <Label fx:id="orderDateLabel" layoutX="174.0" layoutY="15.0" styleClass="subLabel" text="2022-05-09 19:22:00" />
+            <Label fx:id="shippingDateLabel" layoutX="174.0" layoutY="48.0" styleClass="subLabel" text="2022-05-09 19:22:00" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="55.0" layoutY="96.0" prefHeight="269.0" prefWidth="459.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="73.0" prefWidth="392.0" styleClass="MainLabel" text="Customer info">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="93.0" prefHeight="30.0" prefWidth="137.0" styleClass="subLabel" text="Full name:" />
+            <Label layoutX="14.0" layoutY="128.0" prefHeight="30.0" prefWidth="137.0" styleClass="subLabel" text="Phone:" />
+            <Label layoutX="14.0" layoutY="161.0" prefHeight="30.0" prefWidth="113.0" styleClass="subLabel" text="Address:" />
+            <Label layoutX="14.0" layoutY="193.0" prefHeight="30.0" prefWidth="137.0" styleClass="subLabel" text="City:" />
+            <Label fx:id="fullnameLbl" layoutX="136.0" layoutY="93.0" prefHeight="30.0" prefWidth="276.0" styleClass="subLabel" text="ido mialy" />
+            <Label fx:id="phoneLbl" layoutX="136.0" layoutY="130.0" prefHeight="30.0" prefWidth="276.0" styleClass="subLabel" text="0547896325" />
+            <Label fx:id="addressLbl" layoutX="136.0" layoutY="162.0" prefHeight="30.0" prefWidth="276.0" styleClass="subLabel" text="hakerem 20" />
+            <Label fx:id="cityLbl" layoutX="136.0" layoutY="193.0" prefHeight="30.0" prefWidth="276.0" styleClass="subLabel" text="akko" />
+         </children>
+      </AnchorPane>
+      <HBox alignment="CENTER" layoutX="52.0" layoutY="453.0" prefHeight="79.0" prefWidth="837.0">
+         <children>
+            <Label styleClass="MainLabel" text="Total cost:" />
+            <Label fx:id="costLabel" styleClass="MainLabel" text="100" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

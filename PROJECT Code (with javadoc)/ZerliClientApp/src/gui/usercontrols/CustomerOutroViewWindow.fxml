@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="activePanelContainer" prefHeight="663.0" prefWidth="957.0" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.outroViewController">
+   <children>
+      <Label layoutX="59.0" layoutY="28.0" prefHeight="540.0" prefWidth="854.0" text="Thank you for your order.&#10;&#10;&#10;&#10;&#10;Your order is being processed at the moment.&#10;We will notify you with the confirmation&#10;as soon as possible.&#10;&#10;Have a great day." textAlignment="CENTER">
+         <font>
+            <Font name="Maiandra GD" size="40.0" />
+         </font></Label>
+      <ProgressBar layoutX="224.0" layoutY="610.0" prefHeight="50.0" prefWidth="517.0" progress="1.0" />
+      <ImageView fitHeight="146.0" fitWidth="147.0" layoutX="372.0" layoutY="126.0">
+         <image>
+            <Image url="@../../png/check.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

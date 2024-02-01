@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="activePanelContainer" prefHeight="663.0" prefWidth="957.0" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddNewSurveyController">
+   <children>
+      <AnchorPane layoutX="237.0" layoutY="114.0" prefHeight="543.0" prefWidth="446.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="132.0" layoutY="401.0" styleClass="subLabel" text="Survey Name" />
+            <TextField fx:id="surveyName" layoutX="30.0" layoutY="433.0" prefHeight="40.0" prefWidth="387.0" styleClass="subLabel" />
+            <Button fx:id="addSurvey" layoutX="171.0" layoutY="487.0" mnemonicParsing="false" onAction="#addSurvey_Cllick" prefHeight="42.0" prefWidth="104.0" styleClass="Reg-btn" text="Add" />
+            <VBox prefHeight="371.0" prefWidth="446.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="RIGHT" styleClass="subLabel" />
+                  <HBox prefHeight="100.0" prefWidth="435.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="137.0" styleClass="subLabel" text="Question 1 " />
+                        <TextField fx:id="questionText1" prefHeight="40.0" prefWidth="277.0" styleClass="subLabel" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="RIGHT" prefHeight="40.0" prefWidth="136.0" styleClass="subLabel" text=" Question 2 " />
+                        <TextField fx:id="questionText2" prefHeight="40.0" prefWidth="277.0" styleClass="subLabel" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="RIGHT" prefHeight="38.0" prefWidth="136.0" styleClass="subLabel" text=" Question 3 " />
+                        <TextField fx:id="questionText3" prefHeight="40.0" prefWidth="277.0" styleClass="subLabel" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="RIGHT" prefHeight="40.0" prefWidth="136.0" styleClass="subLabel" text=" Question 4 " />
+                        <TextField fx:id="questionText4" prefHeight="40.0" prefWidth="277.0" styleClass="subLabel" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="RIGHT" prefHeight="38.0" prefWidth="136.0" styleClass="subLabel" text=" Question 5 " />
+                        <TextField fx:id="questionText5" prefHeight="40.0" prefWidth="277.0" styleClass="subLabel" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="RIGHT" prefHeight="43.0" prefWidth="136.0" styleClass="subLabel" text=" Question 6 " />
+                        <TextField fx:id="questionText6" prefHeight="40.0" prefWidth="277.0" styleClass="subLabel" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+      <Label layoutX="237.0" layoutY="14.0" styleClass="MainLabel" text="Add new Survey" />
+      <Label fx:id="addViolationLabel" layoutX="14.0" layoutY="20.0" styleClass="miniLabel" text="Label" textFill="RED" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="167.0" fitWidth="163.0" layoutX="730.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../png/survey.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="4.0" layoutY="599.0" mnemonicParsing="false" onAction="#BackBtnPressed" prefHeight="60.0" prefWidth="81.0" styleClass="Left-btn" text="Back" />
+      <Label fx:id="addSurveyLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="212.0" layoutY="96.0" prefHeight="23.0" prefWidth="497.0" styleClass="miniLabel" text="error" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

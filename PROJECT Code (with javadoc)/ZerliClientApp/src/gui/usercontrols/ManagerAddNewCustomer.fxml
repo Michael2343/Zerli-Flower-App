@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="activePanelContainer" prefHeight="663.0" prefWidth="957.0" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ManagerAddNewCustomerController">
+   <children>
+      <Label layoutX="233.0" layoutY="8.0" styleClass="MainLabel" text="Add new customer" />
+      <AnchorPane layoutX="266.0" layoutY="81.0" prefHeight="116.0" prefWidth="426.0">
+         <children>
+            <Label layoutX="14.0" layoutY="27.0" styleClass="subLabel" text="Enter ID:" />
+            <TextField fx:id="IDSearch" alignment="CENTER" layoutX="119.0" layoutY="19.0" prefHeight="46.0" prefWidth="212.0" promptText="XXXXXXXXX" styleClass="subLabel" />
+            <ImageView fitHeight="85.0" fitWidth="83.0" layoutX="330.0" layoutY="1.0" onMouseClicked="#SearchPressed" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../png/searchAccount.png" />
+               </image>
+               <styleClass>
+                  <String fx:value="imageasbtn" />
+                  <String fx:value="pressbtn" />
+               </styleClass>
+            </ImageView>
+            <Label fx:id="searchErrorLBl" alignment="CENTER" contentDisplay="CENTER" layoutX="5.0" layoutY="78.0" prefHeight="28.0" prefWidth="418.0" text="User not found" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font name="Maiandra GD" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ClientInfoWindow" layoutX="23.0" layoutY="184.0" prefHeight="476.0" prefWidth="912.0">
+         <children>
+            <AnchorPane fx:id="creditCardDialog" layoutX="444.0" layoutY="14.0" prefHeight="301.0" prefWidth="411.0">
+               <children>
+                  <ImageView fitHeight="253.0" fitWidth="403.0" layoutX="4.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../png/CreditCardFront.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="cardNumTxt1" alignment="CENTER" layoutX="142.0" layoutY="153.0" prefHeight="30.0" prefWidth="60.0" promptText="XXXX" styleClass="miniLabel">
+                     <font>
+                        <Font name="Maiandra GD" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="cardNumTxt2" alignment="CENTER" layoutX="208.0" layoutY="153.0" prefHeight="30.0" prefWidth="60.0" promptText="XXXX" styleClass="miniLabel">
+                     <font>
+                        <Font name="Maiandra GD" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="cardNumTxt3" alignment="CENTER" layoutX="274.0" layoutY="153.0" prefHeight="30.0" prefWidth="60.0" promptText="XXXX" styleClass="miniLabel">
+                     <font>
+                        <Font name="Maiandra GD" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="cardNumTxt4" alignment="CENTER" layoutX="341.0" layoutY="153.0" prefHeight="30.0" prefWidth="60.0" promptText="XXXX" styleClass="miniLabel">
+                     <font>
+                        <Font name="Maiandra GD" size="14.0" />
+                     </font>
+                  </TextField>
+                  <ComboBox fx:id="expMonthCB" layoutX="168.0" layoutY="197.0" prefHeight="35.0" prefWidth="90.0" styleClass="miniLabel" visibleRowCount="6" />
+                  <ComboBox fx:id="yearCB" layoutX="268.0" layoutY="196.0" prefHeight="35.0" prefWidth="120.0" styleClass="miniLabel" visibleRowCount="6" />
+                  <Label layoutX="11.0" layoutY="154.0" text="Card Number">
+                     <font>
+                        <Font name="Maiandra GD" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="cvvText" alignment="CENTER" layoutX="69.0" layoutY="264.0" prefHeight="30.0" prefWidth="56.0" promptText="XXX" styleClass="miniLabel">
+                     <font>
+                        <Font name="Maiandra GD" size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="17.0" layoutY="267.0" text="CVV">
+                     <font>
+                        <Font name="Maiandra GD" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="11.0" layoutY="200.0" text="Expiratrion Date">
+                     <font>
+                        <Font name="Maiandra GD" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="137.0" layoutY="268.0" text="3 digit in the back of the card">
+                     <font>
+                        <Font name="Maiandra GD" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="98.0" fitWidth="122.0" layoutX="395.0" layoutY="380.0" onMouseClicked="#addCustomerPressed" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../png/newAccount.png" />
+               </image>
+               <styleClass>
+                  <String fx:value="imageasbtn" />
+                  <String fx:value="pressbtn" />
+               </styleClass>
+            </ImageView>
+            <TextField fx:id="IDTxt" alignment="CENTER" disable="true" editable="false" layoutX="121.0" layoutY="14.0" prefHeight="46.0" prefWidth="212.0" promptText="ID" styleClass="subLabel" />
+            <TextField fx:id="firstNameTxt" alignment="CENTER" disable="true" editable="false" layoutX="66.0" layoutY="68.0" prefHeight="46.0" prefWidth="150.0" promptText="First name" styleClass="subLabel" />
+            <TextField fx:id="lastNameTxt" alignment="CENTER" disable="true" editable="false" layoutX="227.0" layoutY="68.0" prefHeight="46.0" prefWidth="150.0" promptText="Last name" styleClass="subLabel" />
+            <TextField fx:id="emailTxt" alignment="CENTER" disable="true" editable="false" layoutX="67.0" layoutY="177.0" prefHeight="46.0" prefWidth="312.0" promptText="Email" styleClass="subLabel" />
+            <TextField fx:id="phoneTxt" alignment="CENTER" disable="true" editable="false" layoutX="66.0" layoutY="122.0" prefHeight="46.0" prefWidth="312.0" promptText="Phone" styleClass="subLabel" />
+            <TextField fx:id="userNameTxt" alignment="CENTER" disable="true" editable="false" layoutX="186.0" layoutY="290.0" prefHeight="46.0" prefWidth="197.0" promptText="User name" styleClass="subLabel" />
+            <TextField fx:id="passwordTxt" alignment="CENTER" layoutX="186.0" layoutY="343.0" prefHeight="46.0" prefWidth="197.0" promptText="Password" styleClass="subLabel" />
+            <Label layoutX="159.0" layoutY="250.0" styleClass="subLabel" text="Login details" />
+            <Label fx:id="addError" contentDisplay="CENTER" layoutX="535.0" layoutY="311.0" prefHeight="161.0" prefWidth="362.0" styleClass="miniLabel" text="Password need 4 characters minimum&#10;Password field missing&#10;Please enter valid credit card&#10;CVV must be 3 digits&#10;Please enter a valid expiration date&#10;&#10;&#10;" textFill="RED">
+               <font>
+                  <Font name="Maiandra GD" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="66.0" layoutY="296.0" styleClass="subLabel" text="User name" />
+            <Label layoutX="70.0" layoutY="350.0" prefHeight="30.0" prefWidth="117.0" styleClass="subLabel" text="Password" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="6.0" layoutY="598.0" mnemonicParsing="false" onAction="#backPressed" text="Back">
+         <styleClass>
+            <String fx:value="Left-btn" />
+            <String fx:value="pressbtn" />
+         </styleClass>
+      </Button>
+      <Button layoutX="869.0" layoutY="24.0" mnemonicParsing="false" onAction="#helpBtnPressed" prefHeight="42.0" prefWidth="66.0" text="Help">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="Reg-btn" />
+            <String fx:value="pressbtn" />
+         </styleClass>
+      </Button>
+   </children>
+</AnchorPane>

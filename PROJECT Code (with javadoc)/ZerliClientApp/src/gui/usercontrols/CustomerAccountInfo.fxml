@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="activePanelContainer" prefHeight="663.0" prefWidth="957.0" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CustomerAccountInfoController">
+   <children>
+      <Label layoutX="324.0" layoutY="8.0" styleClass="MainLabel" text="My account" />
+      <Label fx:id="newCustomerLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="229.0" layoutY="548.0" prefHeight="83.0" prefWidth="500.0" style="-fx-border-color: black; -fx-border-radius: 10;" styleClass="subLabel" text="New account! &#10;You have 20% off on the first pruchase" textAlignment="CENTER" />
+      <Button layoutX="5.0" layoutY="597.0" mnemonicParsing="false" onAction="#backPressed" prefHeight="60.0" prefWidth="81.0" text="Back">
+         <styleClass>
+            <String fx:value="pressbtn" />
+            <String fx:value="Left-btn" />
+         </styleClass>
+      </Button>
+      <TextField fx:id="zerliCoins" alignment="CENTER" editable="false" layoutX="682.0" layoutY="395.0" prefHeight="40.0" prefWidth="139.0" promptText="Zerli Coins" styleClass="subLabel" />
+      <Label layoutX="37.0" layoutY="310.0" styleClass="subLabel" text="Credit card:" />
+      <Label layoutX="551.0" layoutY="397.0" styleClass="subLabel" text="Zerli coins:" />
+      <AnchorPane layoutX="167.0" layoutY="290.0" prefHeight="245.0" prefWidth="375.0">
+         <children>
+            <ImageView fitHeight="221.0" fitWidth="369.0" layoutX="6.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../png/CreditCardFront.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="creditCard" alignment="CENTER" editable="false" layoutX="27.0" layoutY="134.0" prefHeight="40.0" prefWidth="290.0" promptText="Credit-Card" styleClass="subLabel" />
+            <TextField fx:id="monthExp" alignment="CENTER" editable="false" layoutX="12.0" layoutY="191.0" prefHeight="40.0" prefWidth="51.0" promptText="Expiration month" styleClass="subLabel" />
+            <TextField fx:id="cvv" alignment="CENTER" editable="false" layoutX="284.0" layoutY="192.0" prefHeight="40.0" prefWidth="65.0" promptText="cvv" styleClass="subLabel" />
+            <TextField fx:id="yearExp" alignment="CENTER" editable="false" layoutX="79.0" layoutY="192.0" prefHeight="40.0" prefWidth="81.0" promptText="Expiration year" styleClass="subLabel" />
+            <Label layoutX="67.0" layoutY="194.0" styleClass="subLabel" text="/" />
+         </children>
+      </AnchorPane>
+      <VBox layoutX="229.0" layoutY="96.0" prefHeight="180.0" prefWidth="500.0" spacing="10.0">
+         <children>
+            <HBox spacing="10.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="120.0" styleClass="subLabel" text="Full name:" textAlignment="CENTER" />
+                  <TextField fx:id="firstName" alignment="CENTER" editable="false" prefHeight="40.0" prefWidth="180.0" promptText="First Name" styleClass="subLabel" />
+                  <TextField fx:id="lastName" alignment="CENTER" editable="false" prefHeight="40.0" prefWidth="180.0" promptText="Last Name" styleClass="subLabel" />
+               </children>
+            </HBox>
+            <HBox spacing="10.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="120.0" styleClass="subLabel" text="ID:" textAlignment="CENTER" />
+                  <TextField fx:id="ID" alignment="CENTER" editable="false" prefHeight="40.0" prefWidth="180.0" promptText="ID" styleClass="subLabel" />
+               </children>
+            </HBox>
+            <HBox spacing="10.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="120.0" styleClass="subLabel" text="Phone:" />
+                  <TextField fx:id="phone" alignment="CENTER" editable="false" prefHeight="40.0" prefWidth="180.0" promptText="Phone" styleClass="subLabel" />
+               </children>
+            </HBox>
+            <HBox spacing="10.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="120.0" styleClass="subLabel" text="Email:" />
+                  <TextField fx:id="email" alignment="CENTER" editable="false" prefHeight="40.0" prefWidth="369.0" promptText="Email" styleClass="subLabel" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="activePanelContainer" prefHeight="663.0" prefWidth="957.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ManagerHomepageController">
+   <children>
+      <ImageView fitHeight="223.0" fitWidth="423.0" layoutX="253.0" layoutY="258.0">
+         <image>
+            <Image url="@../../png/ZerliLogo.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="315.0" layoutY="188.0" prefHeight="81.0" prefWidth="333.0" styleClass="MainLabel" text="Welcom to">
+         <font>
+            <Font name="Maiandra GD" size="66.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="activePanelContainer" prefHeight="663.0" prefWidth="957.0" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.InsertAnswersIntoSurveyController">
+   <children>
+      <AnchorPane layoutX="222.0" layoutY="90.0" prefHeight="565.0" prefWidth="492.0">
+         <children>
+            <ComboBox fx:id="surveyNameSelector" layoutX="216.0" layoutY="14.0" onAction="#SetSurvey" prefHeight="40.0" prefWidth="220.0" styleClass="miniLabel" />
+            <Label fx:id="submitLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="23.0" layoutY="463.0" prefHeight="30.0" prefWidth="442.0" styleClass="subLabel" text="Label" textAlignment="CENTER" textFill="RED" visible="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="62.0" layoutY="19.0" styleClass="subLabel" text="Select Survey" />
+            <Button fx:id="SubmitResult1" layoutX="209.0" layoutY="509.0" mnemonicParsing="false" onAction="#SubmitResult_Click" styleClass="Reg-btn" text="Submit" />
+            <VBox layoutX="7.0" layoutY="110.0" prefHeight="357.0" prefWidth="485.0">
+               <children>
+                  <HBox spacing="20.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="35.0" styleClass="subLabel" text="Q1" />
+                        <TextField fx:id="questionText1" disable="true" editable="false" prefHeight="40.0" prefWidth="221.0" styleClass="miniLabel" />
+                        <Spinner fx:id="spinnerQuestion1" prefHeight="40.0" prefWidth="139.0" styleClass="miniLabel" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox spacing="20.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="RIGHT" styleClass="subLabel" text="Q2" />
+                        <TextField fx:id="questionText2" disable="true" editable="false" prefHeight="40.0" prefWidth="220.0" styleClass="miniLabel" />
+                        <Spinner fx:id="spinnerQuestion2" prefHeight="40.0" prefWidth="140.0" styleClass="miniLabel" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox spacing="20.0">
+                     <children>
+                        <Label alignment="TOP_CENTER" contentDisplay="RIGHT" styleClass="subLabel" text="Q3" />
+                        <TextField fx:id="questionText3" disable="true" editable="false" prefHeight="40.0" prefWidth="220.0" styleClass="miniLabel" />
+                        <Spinner fx:id="spinnerQuestion3" prefHeight="40.0" prefWidth="140.0" styleClass="miniLabel" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox spacing="20.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="RIGHT" styleClass="subLabel" text="Q4" />
+                        <TextField fx:id="questionText4" disable="true" editable="false" prefHeight="40.0" prefWidth="220.0" styleClass="miniLabel" />
+                        <Spinner fx:id="spinnerQuestion4" prefHeight="40.0" prefWidth="140.0" styleClass="miniLabel" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox spacing="20.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="RIGHT" styleClass="subLabel" text="Q5" />
+                        <TextField fx:id="questionText5" disable="true" editable="false" prefHeight="40.0" prefWidth="220.0" styleClass="miniLabel" />
+                        <Spinner fx:id="spinnerQuestion5" prefHeight="40.0" prefWidth="140.0" styleClass="miniLabel" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox spacing="20.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="RIGHT" prefHeight="50.0" styleClass="subLabel" text="Q6" />
+                        <TextField fx:id="questionText6" disable="true" editable="false" prefHeight="40.0" prefWidth="220.0" styleClass="mini" />
+                        <Spinner fx:id="spinnerQuestion6" prefHeight="40.0" prefWidth="140.0" styleClass="miniLabel" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="26.0" layoutY="71.0" prefHeight="30.0" prefWidth="442.0" styleClass="subLabel" text="Answers must to be 1-10" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Label layoutX="299.0" layoutY="14.0" styleClass="MainLabel" text="Survey Editor" />
+      <ImageView fitHeight="135.0" fitWidth="140.0" layoutX="758.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../png/Answers.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="SubmitResult" layoutX="7.0" layoutY="593.0" mnemonicParsing="false" onAction="#BackBtnPressed" styleClass="Left-btn" text="Back" />
+   </children>
+</AnchorPane>

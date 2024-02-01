@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="activePanelContainer" prefHeight="663.0" prefWidth="957.0" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ReportSelectorController">
+   <children>
+      <ComboBox fx:id="reportType" layoutX="278.0" layoutY="119.0" prefHeight="42.0" prefWidth="270.0" styleClass="miniLabel" />
+      <Label layoutX="114.0" layoutY="125.0" styleClass="subLabel" text="Reports Type">
+         <font>
+            <Font name="Maiandra GD" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="viewRepBtn" layoutX="360.0" layoutY="534.0" mnemonicParsing="false" onAction="#viewReport_click" prefHeight="48.0" prefWidth="140.0" text="View Report">
+         <font>
+            <Font name="Maiandra GD" size="14.0" />
+         </font>
+         <styleClass>
+            <String fx:value="Reg-btn" />
+            <String fx:value="pressbtn" />
+         </styleClass>
+      </Button>
+      <CheckBox fx:id="isCompare" layoutX="589.0" layoutY="123.0" mnemonicParsing="false" styleClass="subLabel" text="Compare">
+         <font>
+            <Font name="Maiandra GD" size="14.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="243.0" layoutY="14.0" prefHeight="73.0" prefWidth="464.0" styleClass="MainLabel" text="Reports Selection">
+         <font>
+            <Font name="Maiandra GD" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="516.0" layoutY="503.0" prefHeight="149.0" prefWidth="428.0" styleClass="miniLabel" textFill="RED" />
+      <RadioButton fx:id="isQuarterly" layoutX="739.0" layoutY="401.0" mnemonicParsing="false" styleClass="subLabel" text="Quarterly">
+         <font>
+            <Font name="Maiandra GD" size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="periodGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="isMonthly" layoutX="739.0" layoutY="253.0" mnemonicParsing="false" styleClass="subLabel" text="Monthly" toggleGroup="$periodGroup">
+         <font>
+            <Font name="Maiandra GD" size="14.0" />
+         </font>
+      </RadioButton>
+      <AnchorPane fx:id="panelMonth" layoutX="145.0" layoutY="184.0" prefHeight="149.0" prefWidth="519.0" style="-fx-border-color: black;">
+         <children>
+            <ComboBox fx:id="reportMonth" layoutX="161.0" layoutY="36.0" prefHeight="42.0" prefWidth="151.0" styleClass="miniLabel" />
+            <ComboBox fx:id="comparedMonth" layoutX="162.0" layoutY="90.0" prefHeight="42.0" prefWidth="151.0" styleClass="miniLabel" />
+            <ComboBox fx:id="reportYear" layoutX="327.0" layoutY="36.0" prefHeight="42.0" prefWidth="151.0" styleClass="miniLabel" />
+            <ComboBox fx:id="comparedYear" layoutX="328.0" layoutY="90.0" prefHeight="42.0" prefWidth="151.0" styleClass="miniLabel" />
+            <Label layoutX="36.0" layoutY="45.0" styleClass="subLabel" text="Report 1">
+               <font>
+                  <Font name="Maiandra GD" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="95.0" styleClass="subLabel" text="Report 2">
+               <font>
+                  <Font name="Maiandra GD" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="380.0" layoutY="3.0" styleClass="subLabel" text="Year">
+               <font>
+                  <Font name="Maiandra GD" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="195.0" layoutY="2.0" styleClass="subLabel" text="Month">
+               <font>
+                  <Font name="Maiandra GD" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="panelQuarter" layoutX="145.0" layoutY="344.0" prefHeight="155.0" prefWidth="519.0" style="-fx-border-color: black;">
+         <children>
+            <ComboBox fx:id="reportQuarter" layoutX="167.0" layoutY="42.0" prefHeight="42.0" prefWidth="151.0" styleClass="miniLabel" />
+            <ComboBox fx:id="comparedQuarter" layoutX="167.0" layoutY="93.0" prefHeight="42.0" prefWidth="151.0" styleClass="miniLabel" />
+            <ComboBox fx:id="reportQuarterY" layoutX="332.0" layoutY="42.0" prefHeight="42.0" prefWidth="151.0" styleClass="miniLabel" />
+            <ComboBox fx:id="comparedQuarterY" layoutX="332.0" layoutY="93.0" prefHeight="42.0" prefWidth="151.0" styleClass="miniLabel" />
+            <Label layoutX="46.0" layoutY="47.0" styleClass="subLabel" text="Report 1">
+               <font>
+                  <Font name="Maiandra GD" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="46.0" layoutY="92.0" styleClass="subLabel" text="Report 2">
+               <font>
+                  <Font name="Maiandra GD" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="191.0" layoutY="6.0" styleClass="subLabel" text="Quarter">
+               <font>
+                  <Font name="Maiandra GD" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="375.0" layoutY="7.0" styleClass="subLabel" text="Year">
+               <font>
+                  <Font name="Maiandra GD" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button layoutX="886.0" layoutY="19.0" mnemonicParsing="false" onAction="#helpBtnPressed" styleClass="Reg-btn" text="Help" />
+   </children>
+</AnchorPane>

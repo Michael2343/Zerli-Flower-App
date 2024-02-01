@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="activePanelContainer" prefHeight="663.0" prefWidth="957.0" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SurveyHistogramController">
+   <children>
+      <Label fx:id="surveyNameLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="22.0" layoutY="3.0" prefHeight="74.0" prefWidth="910.0" styleClass="MainLabel" text="survy name's histogram" textAlignment="CENTER" />
+      <ImageView fx:id="Image1" fitHeight="230.0" fitWidth="300.0" layoutX="18.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="Image2" fitHeight="230.0" fitWidth="300.0" layoutX="328.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="Image4" fitHeight="230.0" fitWidth="300.0" layoutX="19.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="Image5" fitHeight="230.0" fitWidth="300.0" layoutX="329.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="Image6" fitHeight="230.0" fitWidth="300.0" layoutX="639.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="Image3" fitHeight="230.0" fitWidth="300.0" layoutX="636.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="7.0" layoutY="595.0" mnemonicParsing="false" onAction="#BackBtnPressed" prefHeight="50.0" prefWidth="82.0" text="Back">
+         <styleClass>
+            <String fx:value="pressbtn" />
+            <String fx:value="Left-btn" />
+         </styleClass>
+      </Button>
+      <Button layoutX="523.0" layoutY="604.0" mnemonicParsing="false" onAction="#InsertPDFBtnpressed" prefHeight="42.0" prefWidth="137.0" text="Insert PDF">
+         <styleClass>
+            <String fx:value="pressbtn" />
+            <String fx:value="Reg-btn" />
+         </styleClass>
+      </Button>
+      <ImageView fx:id="checkBox" fitHeight="42.0" fitWidth="42.0" layoutX="166.0" layoutY="604.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../png/checkBox.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="PdfTextBox" editable="false" layoutX="215.0" layoutY="604.0" prefHeight="42.0" prefWidth="298.0" styleClass="miniLabel" />
+      <Button layoutX="668.0" layoutY="604.0" mnemonicParsing="false" onAction="#submitPDFBtnpressed" prefHeight="42.0" prefWidth="137.0" text="Submit PDF">
+         <styleClass>
+            <String fx:value="pressbtn" />
+            <String fx:value="Reg-btn" />
+         </styleClass>
+      </Button>
+   </children>
+</AnchorPane>

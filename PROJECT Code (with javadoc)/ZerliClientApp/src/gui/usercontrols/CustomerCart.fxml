@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="activePanelContainer" prefHeight="663.0" prefWidth="957.0" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CustomerCartController">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="26.0" layoutY="54.0" prefHeight="86.0" prefWidth="912.0" spacing="5.0" stylesheets="@../application.css">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="52.0" prefWidth="100.0" styleClass="subLabel" text="Image" textAlignment="CENTER">
+               <font>
+                  <Font name="Maiandra GD" size="26.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="52.0" prefWidth="225.0" styleClass="subLabel" text="Name" textAlignment="CENTER">
+               <font>
+                  <Font name="Maiandra GD" size="26.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="52.0" prefWidth="100.0" styleClass="subLabel" text="Quantity" textAlignment="CENTER">
+               <font>
+                  <Font name="Maiandra GD" size="26.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="52.0" prefWidth="125.0" styleClass="subLabel" text="Catalog" textAlignment="CENTER">
+               <font>
+                  <Font name="Maiandra GD" size="26.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="52.0" prefWidth="235.0" styleClass="subLabel" text="Type" textAlignment="CENTER">
+               <font>
+                  <Font name="Maiandra GD" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label contentDisplay="CENTER" layoutX="283.0" layoutY="2.0" prefHeight="79.0" prefWidth="379.0" styleClass="MainLabel" text="Cart checkout" textAlignment="CENTER">
+         <font>
+            <Font name="Maiandra GD" size="47.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="11.0" layoutY="124.0" prefHeight="426.0" prefWidth="935.0">
+         <content>
+            <VBox fx:id="Vbox" prefHeight="389.0" prefWidth="916.0" spacing="5.0" />
+         </content>
+      </ScrollPane>
+      <Button fx:id="nextBtn" layoutX="870.0" layoutY="595.0" mnemonicParsing="false" onAction="#NextBtnPressed" prefHeight="60.0" prefWidth="81.0" stylesheets="@application.css" text="Next">
+         <styleClass>
+            <String fx:value="Next-btn" />
+            <String fx:value="pressbtn" />
+         </styleClass>
+         <font>
+            <Font name="Maiandra GD" size="8.0" />
+         </font>
+      </Button>
+      <ProgressBar layoutX="214.0" layoutY="600.0" prefHeight="50.0" prefWidth="517.0" progress="0.25" />
+      <Label fx:id="CartEmpyLabel" alignment="CENTER" layoutX="209.0" layoutY="258.0" prefHeight="101.0" prefWidth="554.0" styleClass="MainLabel" text="Cart is empty" textFill="RED">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="245.0" layoutY="560.0" prefHeight="34.0" prefWidth="476.0" spacing="5.0">
+         <children>
+            <Label fx:id="TotalCostText" prefHeight="34.0" prefWidth="133.0" styleClass="subLabel" text="Total Cost :">
+               <font>
+                  <Font name="Maiandra GD" size="28.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalCostLabel" styleClass="subLabel" text="20">
+               <font>
+                  <Font name="Maiandra GD" size="28.0" />
+               </font>
+            </Label>
+            <Label fx:id="currency" prefHeight="30.0" prefWidth="34.0" styleClass="subLabel" text="20">
+               <font>
+                  <Font name="Maiandra GD" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

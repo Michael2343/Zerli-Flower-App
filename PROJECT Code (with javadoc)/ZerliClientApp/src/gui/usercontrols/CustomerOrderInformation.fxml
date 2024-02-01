@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="activePanelContainer" prefHeight="663.0" prefWidth="959.0" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.OrderInformationController">
+   <children>
+      <TextArea fx:id="greetingText" layoutX="208.0" layoutY="85.0" prefHeight="145.0" prefWidth="400.0" promptText="Insert text here ..." styleClass="subLabel" />
+      <CheckBox fx:id="useGreeting" layoutX="612.0" layoutY="147.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="29.0" styleClass="miniLabel" />
+      <RadioButton fx:id="pickupRB" layoutX="252.0" layoutY="237.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="161.0" styleClass="subLabel" text="Pick Up">
+         <toggleGroup>
+            <ToggleGroup fx:id="deliveryMethod" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="shippingRB" layoutX="400.0" layoutY="237.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="161.0" styleClass="subLabel" text="Shipping" toggleGroup="$deliveryMethod" />
+      <ComboBox fx:id="branchCombobox" layoutX="433.0" layoutY="314.0" prefHeight="46.0" prefWidth="218.0" styleClass="subLabel" />
+      <Label layoutX="255.0" layoutY="488.0" prefHeight="30.0" prefWidth="174.0" styleClass="subLabel" text="Scheduled date">
+         <font>
+            <Font name="Maiandra GD" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cityText" layoutX="434.0" layoutY="370.0" prefHeight="46.0" prefWidth="218.0" promptText="Karmiel" styleClass="subLabel">
+         <font>
+            <Font name="Maiandra GD" size="18.0" />
+         </font></TextField>
+      <TextField fx:id="streetAddressText" layoutX="434.0" layoutY="423.0" prefHeight="46.0" prefWidth="218.0" promptText="Nesher 55" styleClass="subLabel">
+         <font>
+            <Font name="Maiandra GD" size="18.0" />
+         </font></TextField>
+      <Label layoutX="254.0" layoutY="434.0" styleClass="subLabel" text="Street">
+         <font>
+            <Font name="Maiandra GD" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="254.0" layoutY="381.0" styleClass="subLabel" text="City">
+         <font>
+            <Font name="Maiandra GD" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="143.0" prefHeight="37.0" prefWidth="161.0" styleClass="subLabel" text="Greeting card">
+         <font>
+            <Font name="Maiandra GD" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="255.0" layoutY="325.0" styleClass="subLabel" text="Branch">
+         <font>
+            <Font name="Maiandra GD" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="235.0" prefHeight="37.0" prefWidth="199.0" styleClass="subLabel" text="Delivery method">
+         <font>
+            <Font name="Maiandra GD" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="252.0" layoutY="11.0" prefHeight="73.0" prefWidth="507.0" styleClass="MainLabel" text="Order information">
+         <font>
+            <Font name="Maiandra GD" size="24.0" />
+         </font>
+      </Label>
+      <ProgressBar layoutX="211.0" layoutY="596.0" prefHeight="50.0" prefWidth="517.0" progress="0.5" />
+      <Label fx:id="errorLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="661.0" layoutY="245.0" prefHeight="282.0" prefWidth="283.0" styleClass="miniLabel" textFill="RED">
+         <font>
+            <Font name="Maiandra GD" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="backBtn" layoutX="9.0" layoutY="596.0" mnemonicParsing="false" onAction="#backBtn_press" prefHeight="60.0" prefWidth="81.0" styleClass="Left-btn" text="Back" />
+      <DatePicker fx:id="arrivalDate" editable="false" layoutX="434.0" layoutY="478.0" prefHeight="46.0" prefWidth="218.0" styleClass="miniLabel" />
+      <Slider fx:id="hourSlider" blockIncrement="1.0" layoutX="494.0" layoutY="539.0" max="23.0" onMouseReleased="#hourSlide" prefHeight="14.0" prefWidth="167.0" />
+      <Slider fx:id="minutesSlider" blockIncrement="1.0" layoutX="494.0" layoutY="561.0" max="59.0" onMouseReleased="#minuteSlide" prefHeight="14.0" prefWidth="167.0" />
+      <Label fx:id="timePresented" layoutX="683.0" layoutY="540.0" styleClass="subLabel" text="00:00" />
+      <Label layoutX="434.0" layoutY="537.0" text="hour">
+         <font>
+            <Font name="Maiandra GD" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="434.0" layoutY="559.0" text="minutes">
+         <font>
+            <Font name="Maiandra GD" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="255.0" layoutY="538.0" prefHeight="30.0" prefWidth="174.0" styleClass="subLabel" text="Scheduled time">
+         <font>
+            <Font name="Maiandra GD" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="shippingPrice" alignment="CENTER" contentDisplay="CENTER" layoutX="404.0" layoutY="272.0" prefHeight="30.0" prefWidth="161.0" styleClass="subLabel" text="Shipping Price" textAlignment="CENTER">
+         <font>
+            <Font name="Maiandra GD" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="281.0" layoutY="272.0" styleClass="subLabel" text="Free">
+         <font>
+            <Font name="Maiandra GD" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="641.0" layoutY="147.0" styleClass="subLabel" text="Add Greeting card">
+         <font>
+            <Font name="Maiandra GD" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="nextBtn" layoutX="872.0" layoutY="600.0" mnemonicParsing="false" onAction="#nextBtn_Click" prefHeight="57.0" prefWidth="81.0" stylesheets="@application.css" text="Next">
+         <styleClass>
+            <String fx:value="Next-btn" />
+            <String fx:value="pressbtn" />
+         </styleClass>
+         <font>
+            <Font name="Maiandra GD" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

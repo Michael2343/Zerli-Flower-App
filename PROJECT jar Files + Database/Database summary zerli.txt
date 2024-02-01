@@ -1,0 +1,71 @@
+<Users>
+
+[Registered Customers]
+berto, 1234, 566758951 [Active Customer]
+michael, 1234, 318236866 [Active Customer]
+nurit, 1234, 313200398 [Frozen Customer]
+ido, 1234, 316200351 [Inactive Customer]
+
+[Import new users to Unregistered Customers]
+haim svhvili , 951951951
+naor azran , 010203040
+liran greyshirt , 090807060
+
+[Unregistered Customers]
+avisof, 998877665
+katrina, 997788665
+
+[Demonstration Customer]
+tester, 1234, 999888777
+refund test: 09/06 shipping: 9:00 x 2 (deliver late and get full refund)
+10:00, 
+10:30, 
+11:00
+11:30
+14:00
+15:00
+
+[Employees]
+
+[Zerli]
+CEO: shlomo, 1234
+Marketing: daniel, 1234
+Expert: expert, 1234
+
+[Akko]
+manager: meshi, 1234
+service:  raz, 1234
+delivery: eli, 1234
+
+[Dimona]
+manager: yuval, 1234
+service: matan, 1234
+delivery: yuel, 1234
+
+[Haifa]
+manager: libel, 1234
+service: dor, 1234
+delivery: nadav, 1234
+
+[Jerusalem]
+manager: shuval, 1234
+service: almog, 1234
+delivery: yoni, 1234
+
+[Tel Aviv]
+manager: oded, 1234
+service: dudi, 1234 ; service, 1234
+delivery: noam, 1234
+
+<End Users>
+
+
+<Reports>
+
+[Complaints]
+Branches Akko and Haifa Full Quarters: 4/2021 and 1/2022
+
+[Orders,Income,CEO]
+Branches Akko and Dimona Full Quarters: 4/2021 and 1/2022
+
+<End Reports>
