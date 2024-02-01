@@ -1,0 +1,1 @@
+java -jar G6_client.jar
