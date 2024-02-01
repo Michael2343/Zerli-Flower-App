@@ -46,11 +46,11 @@ In addition, there are Database.sql and Database summary zerli.txt files with th
         ```java
         Javaconn = DriverManager.getConnection("jdbc:mysql://localhost/midproject?useLegacyDatetimeCode=false&serverTimezone=Israel","root",mySQLpassword);
         ```
-    -Replace the placeholders with your actual MySQL Workbench parameters (link, username, and password).
+    - Replace the placeholders with your actual MySQL Workbench parameters (link, username, and password).
 
 3. Run the Server and Client:
--Run the ClientApp class within the client/ package of ZerliClientApp.
--Run the ServerApp class within the server/ package of ZerliServerApp (ensure the server runs first).
+- Run the ClientApp class within the client/ package of ZerliClientApp.
+- Run the ServerApp class within the server/ package of ZerliServerApp (ensure the server runs first).
 
 ### Using JAR Files:
 
