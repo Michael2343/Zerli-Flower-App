@@ -26,39 +26,7 @@ public class ServerApp extends Application{
 	 *
 	 * @param args - the arguments [no use here]
 	 */
-	public static void main(String[] args) {
-		//rg.createOrderReportHistogram("C:\\Users\\Del0riuM\\Desktop","check","Haifa","03-2022","04-2022");
-//		rg.createComplaintReportHistogram("C:\\Users\\Del0riuM\\Desktop","check","Haifa","03-2022","04-2022");
-//		Desktop desktop = Desktop.getDesktop();
-//		try {
-//			desktop.open(new File("C:\\Users\\Del0riuM\\Desktop" + "\\check.pdf"));
-//		} catch (IOException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		new Thread(new Runnable() {
-
-//			@Override
-//			public void run() {
-//				try {
-//					rg.createPdf("C:\\Users\\Del0riuM\\Desktop","check");
-//					try {
-//						Thread.sleep(4000);
-//					} catch (InterruptedException e) {
-//						 TODO Auto-generated catch block
-//						e.printStackTrace();
-//					}
-//					Desktop desktop = Desktop.getDesktop();
-//					desktop.open(new File("C:\\Users\\Del0riuM\\Desktop" + "\\check.pdf"));
-//				} catch (IOException e) {
-//					// TODO Auto-generated catch block
-//					e.printStackTrace();
-//				}
-//				
-//			}
-//
-//		}).run();
- 
+	public static void main(String[] args) { 
         try 
         {
         	server.listen();
