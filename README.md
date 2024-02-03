@@ -34,9 +34,9 @@ In addition, there are Database.sql and Database summary zerli.txt files with th
 ### Using a Java IDE:
 
 1. Create a Folder and Load Projects:
-  -Create a folder named "midproject".
-  -Load the following folders into it: OCSF, ZerliClientApp, and ZerliServerApp.
-  -Use a Java IDE of your choice (e.g., Eclipse IDE).
+  - Create a folder named "midproject".
+  - Load the following folders into it: OCSF, ZerliClientApp, and ZerliServerApp.
+  - Use a Java IDE of your choice (e.g., Eclipse IDE).
 
 2. Load Database:
   - Import the Database.sql file into MySQL Workbench.
