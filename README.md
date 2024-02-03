@@ -26,8 +26,7 @@ In addition, there are Database.sql and zerli.txt files with the initial databas
 ###  PROJECT Code (with javadoc)
 1. OCSF - Simplifying Cybersecurity Data, Open Cybersecurity Schema Framework, is an open-source effort standardizing how security data is organized
 2. ZerliClientApp - The java code for client side
-3. ZerliServerApp - The java code for server side
-In addition, there are Database.sql and Database summary zerli.txt files with the initial database and summary of all the data and (Explain on order and reports screens).pptx 
+3. ZerliServerApp - The java code for server side. In addition, there are Database.sql and Database summary zerli.txt files with the initial database and summary of all the data and (Explain on order and reports screens).pptx 
 
 ## Running the Zerli App
 
